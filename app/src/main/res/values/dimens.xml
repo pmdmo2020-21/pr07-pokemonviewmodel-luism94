@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="small">16dp</dimen>
+    <dimen name="name_battle">30sp</dimen>
+    <dimen name="medium">32dp</dimen>
+    <dimen name="text_small">20sp</dimen>
+    <dimen name="versus_size">80dp</dimen>
+    <dimen name="text_medium">30sp</dimen>
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.battle.BattleActivity">
+
+    <Button
+        android:id="@+id/main_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/main_fight_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_hint" />
+
+    <TextView
+        android:id="@+id/lbl_hint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/small"
+        android:layout_marginEnd="@dimen/small"
+        android:text="@string/lbl_hint"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_small"
+        app:layout_constraintBottom_toTopOf="@+id/main_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_pkmn2" />
+
+    <LinearLayout
+        android:id="@+id/main_pkmn2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_pkmn_1"
+        android:background="@color/purple_50">
+
+        <TextView
+            android:id="@+id/lbl_pkmn2_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/sample"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_medium"/>
+
+        <ImageView
+            android:id="@+id/main_pkmn2_icon"
+            android:layout_width="0dp"
+            android:layout_height="178dp"
+            android:layout_weight="2"
+            app:srcCompat="@drawable/pikachu"
+            android:padding="@dimen/medium"
+            android:contentDescription="@string/icon_desc"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_pkmn_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/green_50">
+
+        <ImageView
+            android:id="@+id/main_pkmn1_icon"
+            android:layout_width="0dp"
+            android:layout_height="178dp"
+            android:layout_weight="2"
+            android:padding="@dimen/medium"
+            app:srcCompat="@drawable/gyarados"
+            android:contentDescription="@string/icon_desc" />
+
+        <TextView
+            android:id="@+id/lbl_pkmn1_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/sample"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_medium" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/battle_versus"
+        android:layout_width="@dimen/versus_size"
+        android:layout_height="@dimen/versus_size"
+        app:layout_constraintBottom_toTopOf="@+id/main_pkmn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_pkmn_1"
+        app:srcCompat="@drawable/versus"
+        android:contentDescription="@string/versus" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

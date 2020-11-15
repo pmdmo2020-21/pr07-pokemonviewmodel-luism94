@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Pokemon battle simulator</string>
+    <string name="lbl_hint">Select your opponents and start the fight to see who is the winner</string>
+    <string name="main_fight_btn">Start the fight</string>
+    <string name="lbl_winner_presentation">And the winner is…</string>
+    <string name="icon_desc">Pokemon Image</string>
+    <string name="versus">Versus icon desc</string>
+    <string name="sample">sample</string>
+</resources>

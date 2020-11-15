@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.selection.SelectionActivity">
+
+    <ImageView
+        android:id="@+id/icon_pkmn_4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="@dimen/small"
+        app:layout_constraintBottom_toTopOf="@+id/option_pkmn_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/icon_pkmn_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/giratina"
+        android:contentDescription="@string/icon_desc" />
+
+    <ImageView
+        android:id="@+id/icon_pkmn_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="@dimen/small"
+        app:layout_constraintBottom_toTopOf="@+id/option_pkmn_1"
+        app:layout_constraintEnd_toStartOf="@+id/icon_pkmn_4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bulbasur"
+        android:contentDescription="@string/icon_desc" />
+
+    <RadioButton
+        android:id="@+id/option_pkmn_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/icon_pkmn_2"
+        app:layout_constraintEnd_toStartOf="@+id/icon_pkmn_4"
+        app:layout_constraintStart_toStartOf="@+id/icon_pkmn_1"
+        app:layout_constraintTop_toBottomOf="@+id/icon_pkmn_1" />
+
+    <RadioButton
+        android:id="@+id/option_pkmn_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/icon_pkmn_5"
+        app:layout_constraintEnd_toEndOf="@+id/icon_pkmn_4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/icon_pkmn_4"
+        app:layout_constraintTop_toBottomOf="@+id/icon_pkmn_4" />
+
+    <ImageView
+        android:id="@+id/icon_pkmn_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="@dimen/small"
+        app:layout_constraintBottom_toTopOf="@+id/option_pkmn_3"
+        app:layout_constraintEnd_toStartOf="@+id/icon_pkmn_6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/option_pkmn_2"
+        app:srcCompat="@drawable/feebas"
+        android:contentDescription="@string/icon_desc" />
+
+    <RadioButton
+        android:id="@+id/option_pkmn_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/icon_pkmn_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon_pkmn_3" />
+
+    <RadioButton
+        android:id="@+id/option_pkmn_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/icon_pkmn_3"
+        app:layout_constraintEnd_toEndOf="@+id/icon_pkmn_2"
+        app:layout_constraintStart_toStartOf="@+id/icon_pkmn_2"
+        app:layout_constraintTop_toBottomOf="@+id/icon_pkmn_2" />
+
+    <ImageView
+        android:id="@+id/icon_pkmn_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="@dimen/small"
+        app:layout_constraintBottom_toTopOf="@+id/option_pkmn_2"
+        app:layout_constraintEnd_toStartOf="@+id/icon_pkmn_5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/option_pkmn_1"
+        app:srcCompat="@drawable/cubone"
+        android:contentDescription="@string/icon_desc" />
+
+    <ImageView
+        android:id="@+id/icon_pkmn_5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="@dimen/small"
+        app:layout_constraintBottom_toTopOf="@+id/option_pkmn_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/icon_pkmn_2"
+        app:layout_constraintTop_toBottomOf="@+id/option_pkmn_4"
+        app:srcCompat="@drawable/gyarados"
+        android:contentDescription="@string/icon_desc" />
+
+    <RadioButton
+        android:id="@+id/option_pkmn_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/icon_pkmn_6"
+        app:layout_constraintEnd_toEndOf="@+id/icon_pkmn_5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/icon_pkmn_5"
+        app:layout_constraintTop_toBottomOf="@+id/icon_pkmn_5" />
+
+    <ImageView
+        android:id="@+id/icon_pkmn_6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="@dimen/small"
+        app:layout_constraintBottom_toTopOf="@+id/option_pkmn_6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/icon_pkmn_3"
+        app:layout_constraintTop_toBottomOf="@+id/option_pkmn_5"
+        app:srcCompat="@drawable/pikachu"
+        android:contentDescription="@string/icon_desc" />
+
+    <RadioButton
+        android:id="@+id/option_pkmn_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/icon_pkmn_6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/icon_pkmn_6"
+        app:layout_constraintTop_toBottomOf="@+id/icon_pkmn_6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
